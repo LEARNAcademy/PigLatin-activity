@@ -9,9 +9,10 @@ h1 {
 }
 
 button {
-  margin: 1rem;
-  border-radius: 0.5rem;
+  margin: 4rem;
+  border-radius: 0.9rem;
   padding: 1rem;
+  border-color: aqua;
 }
 
 footer {
@@ -31,7 +32,7 @@ footer {
 }
 
 .inputArea {
-  background-color: #606060;
+  background-color: pink;
   color: #fff;
   border-radius: .5rem;
   padding: 1rem;
