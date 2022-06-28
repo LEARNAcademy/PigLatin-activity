@@ -2,22 +2,25 @@ import React, { Component } from 'react'
 import './App.css'
 import butcherPig from './assets/butcherPig.jpeg'
 
-class App extends Component{
-  constructor(props){
+class App extends Component {
+  constructor(props) {
     super(props)
     // the state object holds information that can be displayed to the user and updated throughout the program
     this.state = {
       // "phrase" is the text entered by the user - right now there are test words hard coded to make the process of testing your code faster and easier
       // ACTION ITEM: when you are ready for your full user experience, delete the test words so phrase is assigned an empty string
-      phrase: "alpha through yummy squeal queen fry",
+      phrase: "",
       // "phraseTranslated" is what the user will see appear on the page as Pig Latin, it starts as the preset message and updates when your user clicks the "submit" button
-      phraseTranslated: "This is where your translated sentence will appear."
+      phraseTranslated:"",
+
     }
-  }
+
+      }
 
   // The "myPigLatinCodeHere" function is where you will put your logic to convert the sentence entered by the user to Pig Latin
 
   myPigLatinCodeHere = () => {
+
     // the variable "userInput" will contain the text input from the user modified into an array of words
     // no need to change this variable
     let userInput = this.state.phrase.split(" ")
@@ -35,13 +38,40 @@ class App extends Component{
 
       // your code here!
 
+    //  Rules of Pig Latin
+// For words beginning with a vowel, add "way" to the end.
+// For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay".
+// If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first!
+// "y" is treated like a vowel in appropriate circumstances.
+//This code takes the userInput and splits it putting the vowel at the end of the string and
+//adds way to the end.
+
+//MVP - Minimum Viable Product
+// As a user, I can type a series of English words into the Pig Latin application.
+// As a user, when I click Submit, I see a Pig Latin translation of the sentence I entered.
+// As a user, the page is styled, and pleasing to use.
+
+let translatePigLatin =(str) =>  {
+    let currentWord = "";
+
+    if (vowelsArray.indexOf(str[0]) > -1) {
+        currentWord = str + "way";
+        return currentWord;
+    } else {
+        let firstMatch = str.match(/[aeiou]/g) || 0;
+        let vowel = str.indexOf(firstMatch[0]);
+        currentWord = str.substring(vowel) + str.substring(0, vowel) + "ay";
+        return currentWord;
+    }
+}
+console.log(translatePigLatin("apple"))
+//console.log(translatePigLatin(this.state.phrase))
+//console.log(translatePigLatin(this.state.phraseTranslated))
+
       // Remember: console.log is your friend :)
-
-
       // ACTION ITEM: change the value of currentWord to the name of whatever variable you made containing your Pig Latin'd word
-      return currentWord
+      return (this.state.phraseTranslated)
     })
-
 
     // joining the array back to a string of translated words
     // no need to change this variable
@@ -99,7 +129,7 @@ class App extends Component{
           <button onClick={this.restartGame}>Clear</button>
         </div>
         <p>{this.state.phraseTranslated}</p>
-        <footer>Coded by ~your name here~</footer>
+        <footer>Coded by Darwin & Neco ~</footer>
       </>
     )
   }
