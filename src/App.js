@@ -40,7 +40,7 @@ const App = () => {
     })
 
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
-    let translatedWords = translatedWordsArray.join(" ")
+    const translatedWords = translatedWordsArray.join(" ")
     console.log("translatedWords:", translatedWords)
 
     // NO MODIFICATION NEEDED: this will update the inputTranslated variable in state
