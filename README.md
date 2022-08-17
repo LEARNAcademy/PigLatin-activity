@@ -84,7 +84,7 @@ Oday ouyay eakspay igpay atinlay? If you are scratching your head at that statem
 
 ### 🏔 Stretch Challenges
 
-- As a user, I can see a pleasant stylings on the application.
+- As a user, I can see pleasant stylings on the application.
 - As a user, I can input a sentence that includes punctuation.
 - As a user, I can input a sentence that includes lower and upper case words.
 - As a user, I can see a message if I am not using the application correctly.
