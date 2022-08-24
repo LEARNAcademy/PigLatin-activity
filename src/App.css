@@ -22,6 +22,15 @@ button {
   padding: 1rem;
 }
 
+.body-container {
+  padding-bottom: 3rem;
+}
+
+.page-container {
+  min-height: 100vh;
+  position: relative;
+}
+
 .input-section {
   background-color: grey;
   border-radius: .5rem;
@@ -41,9 +50,9 @@ button {
 
 footer {
   bottom: 0;
-  margin-bottom: 1rem;
-  position: fixed;
+  position: absolute;
   width: 100%;
+  height: 3rem;
 }
 
 @media only screen and (max-width: 650px) {
