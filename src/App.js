@@ -65,28 +65,31 @@ const App = () => {
   }
 
   return (
-    <>
-      <h1>Pig Latin Translator</h1>
-      <img
-        src={butcherPigImage}
-        alt="pig with butcher cut names in pig latin"
-        className="butcher-pig-image"
-      />
-      <div className="input-section">
-        <h4>Enter phrase to be translated:</h4>
-        <input
-          type="text"
-          className="user-input"
-          onChange={handleInput}
-          value={userInput}
+    <div className="page-container">
+      <div className="body-container">
+        <h1>Pig Latin Translator</h1>
+        <img
+          src={butcherPigImage}
+          alt="pig with butcher cut names in pig latin"
+          className="butcher-pig-image"
         />
-        <br />
-        <button onClick={setUpPreventDefault}>Submit</button>
-        <button onClick={restartGame}>Clear</button>
+
+        <div className="input-section">
+          <h4>Enter phrase to be translated:</h4>
+          <input
+            type="text"
+            className="user-input"
+            onChange={handleInput}
+            value={userInput}
+          />
+          <br />
+          <button onClick={setUpPreventDefault}>Submit</button>
+          <button onClick={restartGame}>Clear</button>
+        </div>
+        <p>{inputTranslated}</p>
       </div>
-      <p>{inputTranslated}</p>
       <footer>&copy; 2022 | Coded by: Your Names Here!</footer>
-    </>
+    </div>
   )
 }
 
