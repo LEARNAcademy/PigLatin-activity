@@ -96,3 +96,12 @@ Oday ouyay eakspay igpay atinlay? If you are scratching your head at that statem
 - As a developer, my variables are all named semantically.
 - As a developer, I have refactored and efficient code.
 - As a developer, I have my application [deployed as a live website](https://render.com/docs/deploy-create-react-app).
+
+### 🎙 Project Demos
+
+Each team will give a brief (3 minute) presentation of their application. Presenting your project will allow you to practice communication and coding vocabulary. Presentations are not a judgement of your work or ability as each team will have different weaknesses and strengths. Presentations allow other members of the cohort to appreciate a different approach to solving a complex problem.
+
+- Full team: show off your application's user interface (UI)
+- First team member: What was your team's approach to solving this problem? Did the initial approach work out in the end?
+- Second team member: What was the hardest thing about this project? What is your biggest take away?
+- Third team member (if applicable): How did you manage the workflow in a group of three?
