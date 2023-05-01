@@ -1,8 +1,11 @@
 # 🐷 Pig Latin Activity
 
-[Oday ouyay eakspay igpay atinlay?](http://www.wikihow.com/Speak-Pig-Latin)
-
 In this activity we're going to create an application that translates regular English words into Pig Latin.
+
+### 🗃 Resources
+
+- [Oday ouyay eakspay igpay atinlay?](http://www.wikihow.com/Speak-Pig-Latin)
+- [Pig Latin presentation slide deck](https://docs.google.com/presentation/d/1IWVU2SPqE0K77FkCtbRxnPLGPEd2Q-ySmN49LTgbpCo/edit#slide=id.g965f68eb47_0_326)
 
 ### 💬 Rules of Pig Latin
 
