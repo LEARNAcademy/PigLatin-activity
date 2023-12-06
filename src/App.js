@@ -68,7 +68,7 @@ const App = () => {
         <h1>Pig Latin Translator</h1>
         <img
           src={butcherPigImage}
-          alt="pig with butcher cut names in pig latin"
+          alt="drawing of pig with butcher cut names in pig latin"
           className="butcher-pig-image"
         />
 
